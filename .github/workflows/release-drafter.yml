@@ -95,6 +95,7 @@ jobs:
         with:
           version: ${{ steps.get-version.outputs.version }}
           tag: ${{ steps.get-version.outputs.version }}
+          name: ${{ steps.get-version.outputs.version }}
         # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
         # with:
         #   config-name: my-config.yml
